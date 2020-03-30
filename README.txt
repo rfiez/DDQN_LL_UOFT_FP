@@ -1,3 +1,16 @@
+This is the executable python file: ddqn_finalproj_3547_Rueen_Fiez.py
+
+Solved for an episode is defined as reaching a reward of +200. We track the Agent’s average rewards across a span of 100 episodes. Our solution uses 500 episodes for testing purposes where an average reward of 50-75 should serve as an acceptable solved baseline. This is our main objective for the DDQN project.
+
+Rewards scheme details are as follows:
+-	Lander’s Leg ground contact:		+10 reward
+-	Firing Rockets/Thrust Downward:	-0.3 reward
+-	Crash landing is an additional:		-100 reward
+-	Graceful landing is an additional:		+100 reward
+-	Moving away from the goal position will reduce reward 
+-	Moving closer to the goal position will increase reward 
+
+
 1. Make sure to activate the virtual env "final_proj_v_env"
 2. Make sure you have dependencies like swigwin3.0.12, ffmpeg, and pybox2d
 3. Make sure to look at lines 36-60 for Global Variables and Hyperparameters
